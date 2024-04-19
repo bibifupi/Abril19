@@ -1,0 +1,9 @@
+<app-comentarios (llamadaPadre)="recibirComentario($event)"></app-comentarios>
+
+<h2>Comentarios:</h2>
+
+  @for (comentario of comentarios; track $index){
+    <ul>
+        <li>{{comentario}}</li>
+    </ul>
+    }
